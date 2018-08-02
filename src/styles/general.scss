@@ -1,0 +1,97 @@
+@import './styles/_variables';
+@import './styles/_mixins';
+// Elementos
+a,
+a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+    &.mainBg:hover,
+    &.secondBg:hover {
+        opacity: 0.4;
+    }
+}
+
+.disabled {
+    pointer-events: none;
+    opacity: 0.4;
+}
+
+//Fuentes
+.font-xxl {
+    font-size: $font-xxl;
+}
+
+.font-xl {
+    font-size: $font-xl;
+}
+
+.font-lg {
+    font-size: $font-lg;
+}
+
+.font-md {
+    font-size: $font-md;
+}
+
+.font-sm {
+    font-size: $font-sm;
+}
+
+.font-xs {
+    font-size: $font-xs;
+}
+
+mark {
+    background-color: initial;
+    color: $red;
+}
+
+.headerBg {
+    background-color: $blue_header;
+}
+
+.mainBg {
+    background-color: $blue_main;
+}
+
+.mainTx {
+    color: $blue_main;
+}
+
+.mainBorder {
+    border-color: $blue_border;
+}
+
+.secondTx {
+    color: $gray_text;
+}
+
+.secondBg {
+    background-color: $blue_second;
+}
+
+.thirdBg {
+    background-color: $blue_bg;
+}
+
+.secondBorder {}
+
+.blackTx {
+    color: $black_text;
+}
+
+.whiteTx {
+    color: $white;
+}
+
+.whiteBg {
+    background-color: $white;
+}
+
+.whiteBorder {
+    border-color: $white;
+}
