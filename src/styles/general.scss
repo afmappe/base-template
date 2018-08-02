@@ -1,18 +1,42 @@
 @import './styles/_variables';
 @import './styles/_mixins';
 // Elementos
+h1 {
+    font-size: $h1;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: $h2;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: $h3;
+}
+
+p {
+    font-size: $p;
+    font-weight: normal;
+}
+
 a,
 a:visited {
     color: inherit;
     text-decoration: none;
 }
 
-button {
-    cursor: pointer;
-    &.mainBg:hover,
-    &.secondBg:hover {
-        opacity: 0.4;
-    }
+textarea {
+    outline: none;
+    font: inherit;
+    line-height: 150%;
+    border: none;
+}
+
+select {
+    height: 32px;
+    line-height: 26px;
+    max-height: 32px;
 }
 
 .disabled {
@@ -78,8 +102,6 @@ mark {
     background-color: $blue_bg;
 }
 
-.secondBorder {}
-
 .blackTx {
     color: $black_text;
 }
@@ -94,4 +116,78 @@ mark {
 
 .whiteBorder {
     border-color: $white;
+}
+
+//Botones
+input,
+button,
+select {
+    @include border-radius(4px);
+    border: none;
+    outline: none;
+    resize: none;
+}
+
+.btn-normal-primary {
+    @include button-normal($primary);
+}
+
+.btn-normal-secundary {
+    @include button-normal($secundary);
+}
+
+.btn-normal-success {
+    @include button-normal($success);
+}
+
+.btn-normal-danger {
+    @include button-normal($danger);
+}
+
+.btn-normal-warning {
+    @include button-normal($warning);
+}
+
+.btn-normal-info {
+    @include button-normal($info);
+}
+
+.btn-normal-light {
+    @include button-normal($light);
+}
+
+.btn-normal-dark {
+    @include button-normal($dark);
+}
+
+.btn-outline-primary {
+    @include button-outline($primary);
+}
+
+.btn-outline-secundary {
+    @include button-outline($secundary);
+}
+
+.btn-outline-success {
+    @include button-outline($success);
+}
+
+.btn-outline-danger {
+    @include button-outline($danger);
+}
+
+.btn-outline-warning {
+    @include button-outline($warning);
+}
+
+.btn-outline-info {
+    @include button-outline($info);
+}
+
+.btn-outline-light {
+    @include button-outline($light);
+}
+
+.btn-outline-dark {
+    @include button-outline($dark);
 }
