@@ -1,5 +1,6 @@
 @import '_variables';
 @import '_mixins';
+@import 'buttons';
 // Elementos
 a,
 a:visited {
@@ -126,87 +127,4 @@ select {
     border: none;
     outline: none;
     resize: none;
-}
-
-.btn {
-    padding: 10px 22px;
-    font-size: 14px;
-    line-height: 1;
-    &.btn-icons {
-        width: 40px;
-        height: 40px;
-        padding: 10px;
-        text-align: center;
-        vertical-align: middle;
-        i {
-            margin: auto;
-            line-height: initial;
-        }
-    }
-    &:not(:disabled):not(.disabled) {
-        cursor: pointer;
-    }
-    &.btn-fw {
-        min-width: 120px;
-    }
-    &.btn-rounded {
-        border-radius: 50px;
-    }
-    &.btn-sm {
-        font-size: $font-sm;
-    }
-    &.btn-lg {
-        font-size: $font-lg
-    }
-    &.btn-xs {
-        // padding: $btn-padding-y-xs $btn-padding-x-xs;
-        font-size: $font-xs;
-    }
-}
-
-$colors: ( 'primary', $primary),
-('secundary', $secundary),
-('success', $success),
-('danger', $danger),
-('warning', $warning),
-('info', $info),
-('light', $light),
-('dark', $dark);
-@each $item,
-$color in $colors {
-    .btn-#{$item},
-    .btn-outline-#{$item},
-    .btn-inverse-#{$item} {
-        @if $item=='secundary' or $item=='light' {
-            color: $black_text;
-        }
-        @else {
-            color: $white;
-        }
-    }
-    .btn-#{$item} {
-        background-color: $color;
-        border-color: $color;
-    }
-    .btn-outline-#{$item} {
-        border: solid 1px;
-        background-color: transparent;
-        background-image: none;
-        color: $color;
-        border-color: $color;
-        &:hover {
-            color: $white;
-            background-color: $color;
-            border-color: $color;
-        }
-    }
-    .btn-inverse-#{$item} {
-        background-color: rgba($color, 0.5);
-        border-color: $color;
-        &:hover {
-            color: $white;
-            background-color: $color;
-            border-color: $color;
-        }
-    }
 }
