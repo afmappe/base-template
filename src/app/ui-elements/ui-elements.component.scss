@@ -15,14 +15,14 @@
         background: white;
         flex: 1 1 auto;
         padding: 28px;
-        .header {
-            flex: 1 1 auto;
-            .title {
-                font-size: $font-md;
-                font-weight: 500;
-                text-transform: capitalize;
-            }
-            .description {}
+        .title {
+            font-size: $font-md;
+            font-weight: 500;
+            text-transform: capitalize;
+        }
+        .description {}
+        .btn {
+            margin: 10px;
         }
     }
 }
