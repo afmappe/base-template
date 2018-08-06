@@ -1,0 +1,44 @@
+@import '_variables';
+dl,
+ol,
+ul {
+    padding-left: 16px;
+    font-size: $p;
+    li {
+        line-height: 1.8;
+    }
+}
+
+.list-arrow,
+.list-star,
+    {
+    list-style: none;
+    padding: 0;
+    li {
+        padding-left: 1.5rem;
+        &:before {
+            font-family: "FontTest";
+            margin-left: -24px;
+            width: 24px;
+            margin-right: 8px;
+        }
+    }
+}
+
+.list-arrow {
+    li {
+        &:before {
+            content: '\e315';
+            color: $success;
+        }
+    }
+}
+
+.list-star {
+    li {
+        &:before {
+            content: '\e838';
+            color: $warning;
+        }
+    }
+}

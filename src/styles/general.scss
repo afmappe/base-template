@@ -1,12 +1,12 @@
 @import '_variables';
-@import '_mixins';
 @import 'buttons';
+@import 'list';
 @import 'text';
-// Elementos
-body {
-    background-color: $secundary;
-}
-
+// :root,
+// body {
+//     font-size: 16px;
+//     font-family: sans-serif;
+// }
 a,
 a:visited {
     color: inherit;
