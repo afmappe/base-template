@@ -1,7 +1,13 @@
+@import '_variables';
 .btn {
     padding: 10px 22px;
     font-size: 14px;
     line-height: 1;
+    border-radius: 4px;
+    i {
+        margin-right: 5px;
+        line-height: initial;
+    }
     &.btn-icons {
         width: 40px;
         height: 40px;
@@ -19,18 +25,22 @@
     &.btn-fw {
         min-width: 120px;
     }
+    .btn-block {
+        display: block;
+        width: 100%;
+    }
     &.btn-rounded {
-        border-radius: 50px;
+        border-radius: 50%;
     }
     &.btn-sm {
-        font-size: $font-sm;
+        font-size: 12px;
     }
     &.btn-lg {
-        font-size: $font-lg
+        font-size: 16px;
     }
     &.btn-xs {
         // padding: $btn-padding-y-xs $btn-padding-x-xs;
-        font-size: $font-xs;
+        font-size: 10px;
     }
 }
 

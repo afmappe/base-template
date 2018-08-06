@@ -1,0 +1,112 @@
+@import '_variables';
+:root,
+body {
+    font-size: 1rem;
+    font-family: sans-serif;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: sans-serif;
+    font-weight: 500;
+}
+
+.h1,
+h1 {
+    font-size: $h1;
+}
+
+.h2,
+h2 {
+    font-size: $h2;
+}
+
+.h3,
+h3 {
+    font-size: $h3;
+}
+
+.h4,
+h4 {
+    font-size: $h4;
+}
+
+.h5,
+h5 {
+    font-size: $h4;
+}
+
+.h6,
+h6 {
+    font-size: $h6;
+}
+
+p {
+    font-size: 13;
+}
+
+.font-weight-normal {
+    font-weight: 400;
+}
+
+.font-weight-medium {
+    font-weight: 500;
+}
+
+.font-weight-semibold {
+    font-weight: 600;
+}
+
+.font-weight-bold {
+    font-weight: 700 !important;
+}
+
+.font-italic {
+    font-style: italic !important;
+}
+
+small,
+.text-small {
+    font-size: 12px;
+}
+
+.icon-lg {
+    font-size: 40px;
+}
+
+.icon-md {
+    font-size: 30px;
+}
+
+.icon-sm {
+    font-size: 16px;
+}
+
+// Transformation
+.text-ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.text-lowercase {
+    text-transform: lowercase !important;
+}
+
+.text-uppercase {
+    text-transform: uppercase !important;
+}
+
+.text-capitalize {
+    text-transform: capitalize !important;
+}
