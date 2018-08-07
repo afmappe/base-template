@@ -1,9 +1,17 @@
 @import '../../styles/_variables';
 @import '../../styles/_mixins';
+.content-wrapper {
+    display: flex;
+    background: #f2f8f9;
+    padding: 24px 27.2px;
+    flex-direction: column;
+}
+
 .card {
     background: white;
     display: flex;
     flex-direction: column;
+    margin: 10px;
     .row {
         display: flex;
         flex-wrap: wrap;
